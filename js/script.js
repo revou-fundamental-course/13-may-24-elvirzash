@@ -18,11 +18,11 @@ function keliling() {
 function ResetLuas() {
     document.getElementById('alas').value = '';
     document.getElementById('tinggi').value = '';
-    document.getElementById('luas').textContent = '';
+    document.getElementById('LangkahLuas').innerHTML = '';
     document.getElementById('A').value = '';
     document.getElementById('B').value = '';
     document.getElementById('C').value = '';
-    document.getElementById('keliling').textContent = '';
+    document.getElementById('LangkahKeliling').innerHTML = '';
     document.getElementById('HasilLuas').style.display = 'none';
     document.getElementById('HasilKeliling').style.display = 'none';
 }
@@ -31,10 +31,10 @@ function ResetKeliling() {
     document.getElementById('A').value = '';
     document.getElementById('B').value = '';
     document.getElementById('C').value = '';
-    document.getElementById('keliling').textContent = '';
+    document.getElementById('LangkahKeliling').innerHTML = '';
     document.getElementById('alas').value = '';
     document.getElementById('tinggi').value = '';
-    document.getElementById('luas').textContent = '';
+    document.getElementById('LangkahLuas').innerHTML = '';
     document.getElementById('HasilLuas').style.display = 'none';
     document.getElementById('HasilKeliling').style.display = 'none';
 }
