@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Triangle</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>
+            Welcome To My Triangle Calculator
+        </h1>
+    </header>
+    <main>
+        <section class="luas">
+            <h2 id="TitleLuasSegitiga">
+                Luas Segitiga
+            </h2>
+            <img src="asset/LuasSegitiga.png" alt="LuasSegitiga">
+            <p1>
+                Rumus Luas Segitiga Yaitu :
+            </p1>
+            <img src="asset/RumusLuasSegitiga.png" alt="RumusLuasSegitiga">
+            <p2>
+                Dimana :<br/>
+                L = Luas<br/>
+                A = Panjang Alas<br/>
+                t = Tinggi<br/>
+            </p2>
+            <div class="hitung">
+                <h2 id="HitungLuasSegitiga">
+                    Hitung Luas Segitiga
+                </h2>
+                <form>
+                    <section>
+                        <div class="alas">
+                            <input type="number" id="alas" placeholder="Masukan Nilai A">
+                        </div>
+                        <div class="tinggi">
+                            <input type="number" id="tinggi" placeholder="Masukan Nilai t">
+                        </div>
+                    </section>
+                    <input type="button" onclick="luas()" value="Hitung" id="ButtonHitung" />
+                    <input type="button" onclick="ResetLuas()" value="Reset" id="ButtonReset">
+                </form>
+                <div id="HasilLuas">
+                    <p>Hasil Luas: <span id="luas"></span></p>
+                </div>
+            </div>
+
+        </section>
+        <section class="keliling">
+            <h2 id="TitleKelilingSegitiga">
+                Keliling Segitiga
+            </h2>
+            <img src="asset/KelilingSegitiga.png" alt="KelilingSegitiga">
+            <p1>
+                Rumus Keliling Segitiga Yaitu :
+            </p1>
+            <img src="asset/RumusKelilingSegitiga.png" alt="RumusKelilingSegitiga">
+            <p2>
+                Dimana :<br/>
+                K = Keliling<br/>
+                A = Sisi A<br/>
+                B = Sisi B<br/>
+                C = Sisi C<br/>
+            </p2>
+            <div class="hitung">
+                <h2 id="buttonSegitiga">
+                    Hitung Keliling Segitiga
+                </h2>
+                <form>
+                    <section>
+                        <div class="A">
+                            <input type="number" id="A" placeholder="Masukan Nilai A">
+                        </div>
+                        <div class="B">
+                            <input type="number" id="B" placeholder="Masukan Nilai B">
+                        </div>
+                        <div class="C">
+                            <input type="number" id="C" placeholder="Masukan Nilai C">
+                        </div>
+                    </section>
+                    <input type="button" onclick="keliling()" value="Hitung" id="ButtonHitung">
+                    <input type="button" onclick="ResetKeliling()" value="Reset" id="ButtonReset">
+                </form>
+                <div id="HasilKeliling">
+                    <p>Hasil Keliling: <span id="keliling"></span></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <h1>
+            Thanks
+        </h1>
+    </footer>
+</body>
+
+</html>
