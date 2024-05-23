@@ -2,7 +2,8 @@ function luas() {
     const alas = document.getElementById('alas').value;
     const tinggi = document.getElementById('tinggi').value;
     const HasilLuas = (alas * tinggi) / 2;
-    document.getElementById('luas').textContent = HasilLuas;
+    const LangkahLuas = `L = 1/2 x A x t<br>L = 1/2 x ${alas} x ${tinggi}<br>L = ${HasilLuas}`;
+    document.getElementById('LangkahLuas').innerHTML = LangkahLuas;
 }
 
 function keliling() {
@@ -10,7 +11,8 @@ function keliling() {
     const B = document.getElementById('B').value;
     const C = document.getElementById('C').value;
     const HasilKeliling = parseInt(A, 10) + parseInt(B, 10) + parseInt(C, 10);
-    document.getElementById('keliling').textContent = HasilKeliling;
+    const LangkahKeliling = `K = A + B + C<br>K = ${A} + ${B} + ${C}<br>K = ${HasilKeliling}`;
+    document.getElementById('LangkahKeliling').innerHTML = LangkahKeliling;
 }
 
 function ResetLuas() {
