@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <script src="./js/script.js"></script>
     <title>Triangle</title>
@@ -12,68 +13,103 @@
 <body>
     <header class="header">
         <h1>
-            Welcome To My Triangle Calculator
+            Kalkulator Segitiga
         </h1>
     </header>
     <main>
-        <section class="luas">
+        <section class="luas" id="PindahKeLuas">
             <h2 id="TitleLuasSegitiga">
                 Luas Segitiga
             </h2>
-            <img src="asset/LuasSegitiga.png" alt="LuasSegitiga">
-            <p1>
+            <button type="button" onclick="scrollToId('PindahKeKeliling')" id="ButtonPindah">Pindah Ke Keliling Segitiga</button>
+            <img src="asset/LuasSegitiga.png" alt="LuasSegitiga" id="gambar">
+            <p id="deskripsi">
                 Rumus Luas Segitiga Yaitu :
-            </p1>
-            <img src="asset/RumusLuasSegitiga.png" alt="RumusLuasSegitiga">
-            <p2>
+            </p>
+            <img src="asset/RumusLuasSegitiga.png" alt="RumusLuasSegitiga" id="gambar">
+            <p id="deskripsi">
                 Dimana :<br/>
                 L = Luas<br/>
                 A = Panjang Alas<br/>
                 t = Tinggi<br/>
-            </p2>
+            </p>
             <div class="hitung">
                 <h2 id="HitungLuasSegitiga">
                     Hitung Luas Segitiga
                 </h2>
-                <form>
+                <form id="center">
                     <section>
                         <div class="alas">
-                            <input type="number" id="alas" placeholder="Masukan Nilai A">
+                            <input type="number" id="alas" placeholder="Masukan Nilai alas">
                         </div>
                         <div class="tinggi">
-                            <input type="number" id="tinggi" placeholder="Masukan Nilai t">
+                            <input type="number" id="tinggi" placeholder="Masukan Nilai tinggi">
                         </div>
                     </section>
-                    <input type="button" onclick="luas()" value="Hitung" id="ButtonHitung" />
+                    <input type="button" onclick="scrollToId('HitungLuasSegitiga'); HitungLuas();" value="Hitung" id="ButtonHitung">
                     <input type="button" onclick="ResetLuas()" value="Reset" id="ButtonReset">
+                    <br/>
+                    <button type="button" onclick="scrollToId('PindahKeKeliling')" id="ButtonPindah">Pindah Ke Keliling Segitiga</button>
                 </form>
                 <div id="HasilLuas">
+                    <img src="asset/RumusLuasSegitiga.png" alt="RumusLuasSegitiga">
                     <p>Hasil Luas: <span id="luas"></span></p>
                 </div>
             </div>
 
         </section>
-        <section class="keliling">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <section class="keliling" id="PindahKeKeliling">
             <h2 id="TitleKelilingSegitiga">
                 Keliling Segitiga
             </h2>
-            <img src="asset/KelilingSegitiga.png" alt="KelilingSegitiga">
-            <p1>
+            <button type="button" onclick="scrollToId('PindahKeLuas')" id="ButtonPindah">Pindah Ke Luas Segitiga</button>
+            <img src="asset/KelilingSegitiga.png" alt="KelilingSegitiga" id="gambar">
+            <p id="deskripsi">
                 Rumus Keliling Segitiga Yaitu :
-            </p1>
-            <img src="asset/RumusKelilingSegitiga.png" alt="RumusKelilingSegitiga">
-            <p2>
+            </p>
+            <img src="asset/RumusKelilingSegitiga.png" alt="RumusKelilingSegitiga" id="gambar">
+            <p id="deskripsi">
                 Dimana :<br/>
                 K = Keliling<br/>
                 A = Sisi A<br/>
                 B = Sisi B<br/>
                 C = Sisi C<br/>
-            </p2>
+            </p>
             <div class="hitung">
-                <h2 id="buttonSegitiga">
+                <h2 id="HitungKelilingSegitiga">
                     Hitung Keliling Segitiga
                 </h2>
-                <form>
+                <form id="center">
                     <section>
                         <div class="A">
                             <input type="number" id="A" placeholder="Masukan Nilai A">
@@ -85,15 +121,47 @@
                             <input type="number" id="C" placeholder="Masukan Nilai C">
                         </div>
                     </section>
-                    <input type="button" onclick="keliling()" value="Hitung" id="ButtonHitung">
+                    <input type="button" onclick="scrollToId('HitungKelilingSegitiga'); HitungKeliling();" value="Hitung" id="ButtonHitung">
                     <input type="button" onclick="ResetKeliling()" value="Reset" id="ButtonReset">
+                    <br/>
+                    <button type="button" onclick="scrollToId('PindahKeLuas')" id="ButtonPindah">Pindah Ke Luas Segitiga</button>
                 </form>
                 <div id="HasilKeliling">
+                    <img src="asset/RumusKelilingSegitiga.png" alt="RumusKelilingSegitiga">
                     <p>Hasil Keliling: <span id="keliling"></span></p>
                 </div>
             </div>
         </section>
-
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
     </main>
     <footer class="footer">
         <h1>

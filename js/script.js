@@ -17,11 +17,34 @@ function ResetLuas() {
     document.getElementById('alas').value = '';
     document.getElementById('tinggi').value = '';
     document.getElementById('luas').textContent = '';
+    document.getElementById('HasilLuas').style.display = 'none';
+    document.getElementById('HasilKeliling').style.display = 'none';
 }
 
-function resetKeliling() {
+function ResetKeliling() {
     document.getElementById('A').value = '';
     document.getElementById('B').value = '';
     document.getElementById('C').value = '';
     document.getElementById('keliling').textContent = '';
+    document.getElementById('HasilLuas').style.display = 'none';
+    document.getElementById('HasilKeliling').style.display = 'none';
+}
+
+function scrollToId(id) {
+    var element = document.getElementById(id);
+    if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    document.getElementById('HasilLuas').style.display = 'none';
+    document.getElementById('HasilKeliling').style.display = 'none';
+}
+
+function HitungLuas() {
+    luas();
+    document.getElementById('HasilLuas').style.display = 'block';
+}
+
+function HitungKeliling() {
+    keliling();
+    document.getElementById('HasilKeliling').style.display = 'block';
 }
